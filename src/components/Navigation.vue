@@ -2,8 +2,8 @@
     <nav
   class="flex-no-wrap relative flex w-full items-center justify-between bg-gray-100 py-4 shadow-md shadow-black/5 dark:bg-gray-800 dark:shadow-black/10 lg:flex-wrap lg:justify-start"
   data-te-navbar-ref>
-  <div class="flex w-full flex-wrap items-center justify-between px-6">
-    <button
+  <div class="flex w-full items-center justify-between px-6">
+    <!-- <button
       class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
       type="button"
       data-te-collapse-init
@@ -23,22 +23,22 @@
             clip-rule="evenodd" />
         </svg>
       </span>
-    </button>
+    </button> -->
     <div
-      class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+      class="!visible flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
       id="navbarSupportedContent1"
       data-te-collapse-item>
       <a
-        class="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+        class="
+                mt-2 mr-2 flex items-center text-neutral-900 
+                hover:text-neutral-900 focus:text-neutral-900 
+                dark:text-neutral-200 dark:hover:text-neutral-400 
+                dark:focus:text-neutral-400 lg:mt-0 text-2xl font-bold text-blue-900"
         href="#">
-        <img
-          src="https://tecdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.png"
-          style="height: 15px"
-          alt=""
-          loading="lazy" />
+        Binhusenstore
       </a>
       <!-- Left links -->
-      <ul
+      <!-- <ul
         class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
         data-te-navbar-nav-ref>
         <li class="lg:pr-2" data-te-nav-item-ref>
@@ -65,7 +65,7 @@
             >Projects</a
           >
         </li>
-      </ul>
+      </ul> -->
       <!-- Left links -->
     </div>
     <!-- Collapsible wrapper -->
@@ -73,6 +73,7 @@
     <!-- Right elements -->
     <div class="relative flex items-center">
       <!-- Icon -->
+      <!-- cart -->
       <a
         class="mr-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
         href="#">
@@ -86,8 +87,12 @@
               d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
           </svg>
         </span>
+        <span
+          class="absolute -mt-2.5 ml-2 rounded-full bg-red-700 py-0 px-1.5 text-xs text-white"
+          >1</span
+        >
       </a>
-      <div class="relative" data-te-dropdown-ref>
+      <!-- <div class="relative" data-te-dropdown-ref>
         <a
           class="hidden-arrow mr-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
           href="#"
@@ -141,8 +146,8 @@
             >
           </li>
         </ul>
-      </div>
-      <div class="relative" data-te-dropdown-ref>
+      </div> -->
+      <!-- <div class="relative" data-te-dropdown-ref>
         <a
           class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
           href="#"
@@ -186,7 +191,7 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <!-- Right elements -->
   </div>
