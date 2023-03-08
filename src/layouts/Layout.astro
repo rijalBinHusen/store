@@ -4,8 +4,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-
 import Navigation from '../components/Navigation.vue';
+import Seo from '../components/Seo.astro';
+const description: string = "Atur belanjaan hari raya sekarang!";
 ---
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ import Navigation from '../components/Navigation.vue';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<Seo title={title} description={description}/>
 	</head>
 	<body>
 		<Navigation />
