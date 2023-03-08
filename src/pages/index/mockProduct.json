@@ -1,0 +1,158 @@
+{
+    "terlaris": [
+        {
+            "id": "asd1293uasdads1",
+            "name": "Cookies letter @250gr",
+            "price": 25000,
+            "img": "cookies1"
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Nastar nanas @250gr",
+            "price": 25000,
+            "img": "cookies2"
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Castangel keju @250gr",
+            "price": 25000,
+            "img": "cookies3"
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Pastel @250gr",
+            "price": 25000,
+            "img": "cookies4"
+        }
+    ],
+    "categories": [
+        {
+            "id": "asd1293uasdads1",
+            "name": "Cookies",
+            "products": [
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Cookies kacang @250gr",
+                    "price": 25000,
+                    "img": "cookies5"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Cookies letter @250gr",
+                    "price": 25000,
+                    "img": "cookies6"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Butter cookies @250gr",
+                    "price": 25000,
+                    "img": "cookies7"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Banana cookies @250gr",
+                    "price": 25000,
+                    "img": "cookies8"
+                }
+            ]
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Snack",
+            "products": [
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Pastel ayam @250gr",
+                    "price": 25000,
+                    "img": "cookies3"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Mawar cookies @250gr",
+                    "price": 25000,
+                    "img": "cookies5"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Ulat bulu @250gr",
+                    "price": 25000,
+                    "img": "cookies1"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Monde @250gr",
+                    "price": 25000,
+                    "img": "cookies5"
+                }
+            ]
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Tabungan hari raya",
+            "products": [
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel sabun",
+                    "price": 25000,
+                    "img": "cookies2"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel sembako",
+                    "price": 25000,
+                    "img": "cookies6"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel parfume @250gr",
+                    "price": 25000,
+                    "img": "cookies4"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel snack @250gr",
+                    "price": 25000,
+                    "img": "cookies8"
+                }
+            ]
+        },
+        {
+            "id": "asd1293uasdads1",
+            "name": "Semua produk",
+            "products": [
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Cookies kacang @250gr",
+                    "price": 25000,
+                    "img": "cookies8"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel letter @250gr",
+                    "price": 25000,
+                    "img": "cookies4"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Butter parcel @250gr",
+                    "price": 25000,
+                    "img": "cookies2"
+                },
+                {
+                    "id": "asd1293uasdads1",
+                    "name": "Parcel sabun @250gr",
+                    "price": 25000,
+                    "img": "cookies3"
+                }
+            ]
+        }
+    ],
+    "testimonial": {
+        "id": "asd1293uasdads1",
+        "img": "cookies3",
+        "user": "User Kita",
+        "rating": 4,
+        "content": "What a great cookies with my family and I should try again next time soon ...",
+        "product": "Parcel sabun"
+    }
+}
