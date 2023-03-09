@@ -2,8 +2,8 @@
   <div
     class="block max-w-xs rounded-lg bg-white shadow-lg dark:bg-neutral-700 mx-6 md:mx-2 p-2 mt-2">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-      <img
-        class="rounded-t-lg"
+        <img
+        class="rounded-t-lg image-product w-full"
         :src="image || 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg'"
         alt="" />
     </a>
@@ -38,3 +38,13 @@ const props = defineProps({
 })
 
 </script>
+
+<style scoped>
+
+.image-product {
+  height: 150px; 
+  object-fit: cover;
+  object-position: 25% 25%;
+}
+
+</style>
