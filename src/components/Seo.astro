@@ -6,8 +6,8 @@ export interface Props {
   image?: string
 }
 const { title, description, permalink, image } = Astro.props;
-const imageURL: string = image ? image : "cover (1).JPG";
-const socialUrl: string = Astro.url.href + imageURL
+const imageURL: string = image ? image : "/thumbnail.png";
+const socialUrl: string = Astro.url.origin + imageURL
 const link: URL | string = permalink || Astro.url
 ---
 
