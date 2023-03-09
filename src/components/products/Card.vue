@@ -1,6 +1,6 @@
 <template>
   <div
-    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mx-6 p-2 mt-2">
+    class="block max-w-xs rounded-lg bg-white shadow-lg dark:bg-neutral-700 mx-6 md:mx-2 p-2 mt-2">
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
       <img
         class="rounded-t-lg"
