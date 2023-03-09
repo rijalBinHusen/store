@@ -4,15 +4,15 @@
     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
       <img
         class="rounded-t-lg"
-        src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+        :src="image || 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg'"
         alt="" />
     </a>
     <div>
       <h5
-        class="my-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        class="my-2 md:text-sm text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
         {{ name }}
       </h5>
-      <p class="font-bold text-base text-neutral-800 dark:text-neutral-200">
+      <p class="font-bold md:text-xs text-base text-neutral-800 dark:text-neutral-200">
         {{ formatPrice(price) }}
       </p>
       <!-- <button
