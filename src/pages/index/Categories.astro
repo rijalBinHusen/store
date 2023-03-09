@@ -1,3 +1,18 @@
 ---
-import { Product } from "../../components/products/Card.vue"
+import { categories } from "./mockProduct.json"
+import ProductCard from "../../components/products/Card.vue"
 ---
+
+<div id="category" class="flex flex-wrap">
+    {categories.map((category) => (
+        <div class="flex-wrap">
+            <h2 class="text-2xl font-bold ml-6 mt-6">{category.name}</h2>
+        {
+            category.products.map((product) => (
+                <ProductCard id={product.id} image={product.img} name={product.name} price={product.price} />
+            ))
+        }
+        </div>
+    ))
+    }
+</div>
