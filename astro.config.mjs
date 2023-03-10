@@ -13,5 +13,6 @@ export default defineConfig({
                 "@/*": ["src/*"],
             }
         }
-    }
+    },
+    site: "http://localhost:3000"
 });

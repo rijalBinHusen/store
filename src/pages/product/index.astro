@@ -1,16 +1,19 @@
 ---
 import products from "./mockdata.json"
 import ProductCard from "../../components/products/Card.vue"
+import Layout from "../../layouts/Layout.astro";
 ---
-<div id="category" class="grid justify-center">
+<Layout title="Product binhusen" description="Semua produk binhusenstore" permalink={Astro.site + 'product'}>
+    <div id="category" class="grid justify-center">
         <div class="">
-            <h2 class="text-4xl underline mb-12 text-center font-bold md:ml-2 ml-6 mt-6">Semua product</h2>
+            <h2 class="md:text-4xl text-3xl underline mb-12 text-center font-bold md:ml-2 ml-6 mt-6">Semua product</h2>
             <div class="grid md:grid-cols-4 xl:gap-x-12 md:w-full">
                 {
                     products.map((product) => (
                         <ProductCard id={product.id + ''} image={product.image} name={product.name} price={product.price} client:visible />
                         ))
-                }
+                    }
             </div>
         </div>
-</div>
+    </div>
+</Layout>
