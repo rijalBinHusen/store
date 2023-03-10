@@ -21,7 +21,7 @@ import Seo from '../components/Seo.astro';
 		<Seo title={title} description={description} permalink={permalink} image={image}/>
 	</head>
 	<body>
-		<Navigation />
+		<Navigation client:only />
 		<slot />
 	</body>
 </html>

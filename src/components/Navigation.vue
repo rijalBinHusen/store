@@ -1,7 +1,7 @@
 <template>
     <nav
-  class="flex-no-wrap relative flex w-full items-center justify-between bg-gray-100 py-4 shadow-md shadow-black/5 dark:bg-gray-800 dark:shadow-black/10 lg:flex-wrap lg:justify-start"
-  data-te-navbar-ref>
+      class="flex-no-wrap relative flex w-full items-center justify-between bg-gray-100 py-4 shadow-md shadow-black/5 dark:bg-gray-800 dark:shadow-black/10 lg:flex-wrap lg:justify-start"
+      data-te-navbar-ref>
   <div class="flex w-full items-center justify-between px-6">
     <!-- <button
       class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
@@ -34,7 +34,7 @@
                 hover:text-neutral-900 focus:text-neutral-900 
                 dark:text-neutral-200 dark:hover:text-neutral-400 
                 dark:focus:text-neutral-400 lg:mt-0 text-2xl font-bold text-blue-900"
-        href="#">
+        :href="isPathNameEmpty ? '#' : '/'">
         Binhusenstore
       </a>
       <!-- Left links -->
@@ -197,3 +197,10 @@
   </div>
 </nav>
 </template>
+
+<script setup>
+import { computed } from "vue"
+
+const isPathNameEmpty = computed(() =>  location.pathname === '/')
+
+</script>

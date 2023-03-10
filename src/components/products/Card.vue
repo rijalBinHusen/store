@@ -1,7 +1,7 @@
 <template>
   <div
     class="block max-w-xs rounded-lg bg-white shadow-lg dark:bg-neutral-700 mx-6 md:mx-2 p-2 mt-2">
-    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+    <a :href="'product/'+id" data-te-ripple-init data-te-ripple-color="light">
         <img
         class="rounded-t-lg image-product w-full"
         :src="image || 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg'"
