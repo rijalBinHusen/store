@@ -1,29 +1,32 @@
 ---
 import { testimonial } from  "./mockProduct.json"
+import Rating from "../../components/Rating.vue";
 ---
-<div class="grid justify-center md:w-full">
-  <h2 class="ml-6 mt-6 text-2xl font-bold md:ml-2">Testimonial</h2>
-
-  <div class="flex md:flex-row flex-col h-64 xl:gap-x-12">
-
-    <div class="max-w-xs md:w-full mx-6 mt-2 rounded-lg bg-white p-2 shadow-lg dark:bg-neutral-700 md:my-auto">
-      <img class="h-4/6 w-full rounded-t-lg" src={testimonial.img} alt="" />      
-    </div>
-
-    <div class="max-w-xs md:w-full mx-6 mt-2 rounded-lg bg-white p-2 shadow-lg dark:bg-neutral-700 md:mx-2">
-      <p class="font-bold">{testimonial.product}</p>
-      <p>{testimonial.rating}</p>
-      <p>{testimonial.user}</p>
-      <p>{testimonial.content}</p>
-      <!-- <a href="#!" data-te-ripple-init="" data-te-ripple-color="light">
-        <img class="image-product h-4/6 w-full rounded-t-lg" src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1610169860/epaw1lekzliix44r6ox8.jpg" alt="" />
-      </a> -->
-
-      <div>
-        <!-- <h5 class="my-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 md:text-sm">Cookies letter @250gr</h5>
-        <p class="text-base font-bold text-neutral-800 dark:text-neutral-200 md:text-xs">RP25.000</p> -->
+<!-- Container for demo purpose -->
+  <section class="mb-40">
+    <div class="px-6 py-12 md:px-12 bg-gray-50 text-gray-800 lg:text-left">
+      <div class="container mx-auto xl:px-32">
+        <h2 class="text-center mb-8 text-2xl font-bold underline">Testimonial</h2>
+        <div class="grid md:grid-cols-2 gap-12 flex items-center justify-center">
+          <div class="justify-self-end md:w-full max-w-xs mb-2 md:mb-0 ali">
+            <img
+              src={testimonial.img}
+              class="w-full rounded-lg shadow-lg"
+              alt=""
+            />
+          </div>
+          <div class="justify-self-start md:w-full max-w-xs mt-2 md:mt-0">
+            <p class="font-bold text-xl mb-2">{testimonial.product}</p>
+            <Rating rating={testimonial.rating} client:visible />
+            <p class="mt-2 font-semibold mb-4">{testimonial.user}</p>
+            <p>{testimonial.content}</p>
+            <!-- <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">The best offer <br /><span class="text-blue-600">for your business</span></h1>
+            <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Get started</a>
+            <a class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Learn more</a> -->
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
-</div>
+  </section>
+  <!-- Section: Design Block -->
+<!-- Container for demo purpose -->
