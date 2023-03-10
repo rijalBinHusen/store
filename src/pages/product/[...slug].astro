@@ -1,0 +1,25 @@
+---
+import products from "./mockdata.json"
+
+export function getStaticPaths() {
+  return products.map((productData) => ({
+    params: {slug: productData.id},
+    props: { productData }
+  }))
+}
+
+const { name, price, image } = Astro.props.productData;
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title={name} description={name} permalink={Astro.site + Astro.url.pathname}>
+  <div>
+    <p>
+      Good product, {name}!
+    </p>
+    <p>
+      price { price }  
+    </p> 
+    
+    <img src={image} alt={name}>
+  </div>
+</Layout>
