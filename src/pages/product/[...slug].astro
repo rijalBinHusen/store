@@ -8,7 +8,7 @@ import { faker } from "@faker-js/faker"
 export function getStaticPaths() {
   return products.map((productData) => ({
     params: {slug: productData.id},
-    props: { productData: { ...productData , descriptionProduct: faker.datatype.string(1300) }}
+    props: { productData: { ...productData , descriptionProduct: faker.datatype.string(600) }}
   }))
 }
 
@@ -16,18 +16,18 @@ const { name, price, image, descriptionProduct } = Astro.props.productData;
 import Layout from "../../layouts/Layout.astro";
 ---
 <Layout title={name} description={name} permalink={Astro.site + Astro.url.pathname} image={image}>
-  <section class="mb-40 h-full">
+  <section class="md:mb-40 mb-2">
     <div class="px-6 py-12 md:px-12 bg-gray-50 text-gray-800 lg:text-left">
       <div class="container mx-auto xl:px-32">
         <div class="grid md:grid-cols-2 gap-12 flex justify-center">
-          <div class="md:w-full mb-2 md:mb-0 ali">
+          <div class="md:max-w-full max-w-xs mb-2 md:mb-0 ali">
             <img
               src={image}
               class="w-full rounded-lg shadow-lg"
               alt=""
             />
           </div>
-          <div class="md:w-full mt-2 md:mt-0">
+          <div class="md:max-w-full max-w-xs break-words mt-2 md:mt-0">
             <p class="font-bold text-2xl mb-2">{name}</p>
             <!-- <Rating rating={testimonial.rating} client:visible /> -->
             <p class="mt-2 font-semibold mb-4">{formatPrice(price)}</p>
