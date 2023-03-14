@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const { name, price, image } = Astro.props.productData;
 import Layout from "../../layouts/Layout.astro";
 ---
-<Layout title={name} description={name} permalink={Astro.site + Astro.url.pathname}>
+<Layout title={name} description={name} permalink={Astro.site + Astro.url.pathname} image={image}>
   <div>
     <p>
       Good product, {name}!

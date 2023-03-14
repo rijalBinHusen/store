@@ -6,10 +6,10 @@ export interface Props {
   image?: string
 }
 const { title, description, permalink, image } = Astro.props;
-const imageURL: string = image ? image : "/thumbnail.png";
-const socialUrl: string = Astro.url.origin + imageURL
+const imageURL: string = image || Astro.url.origin + "/thumbnail.png"
 const link: URL | string = permalink || Astro.url
 const descriptionSEO = description || "Atur belanjaan hari raya sekarang!"
+const titlePage = title + ' | Binhusenstore'
 ---
 
 <!-- Global Metadata -->
@@ -18,23 +18,23 @@ const descriptionSEO = description || "Atur belanjaan hari raya sekarang!"
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
+<title>{titlePage}</title>
+<meta name="title" content={titlePage} />
 <meta name="description" content={descriptionSEO} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={link} />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={titlePage} />
 <meta property="og:description" content={descriptionSEO} />
-<meta property="og:image" content={socialUrl} />
+<meta property="og:image" content={imageURL} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={link} />
-<meta property="twitter:title" content={title} />
+<meta property="twitter:title" content={titlePage} />
 <meta property="twitter:description" content={descriptionSEO} />
-<meta property="twitter:image" content={socialUrl} />
+<meta property="twitter:image" content={imageURL} />
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <!-- <script>
