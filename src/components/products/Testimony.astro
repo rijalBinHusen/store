@@ -1,0 +1,17 @@
+---
+import Rating from "../Rating.vue";
+
+interface Props {
+    rating: number;
+    user: string;
+    content: string;
+}
+
+const { rating, user, content } = Astro.props
+---
+
+<div>
+    <Rating rating={rating} client:visible />
+    <p class="mt-2 font-semibold mb-4">{user}</p>
+    <p class=" break-words">{content}</p>
+</div>
