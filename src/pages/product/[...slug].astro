@@ -2,6 +2,7 @@
 import products from "./mockdata.json"
 import { testimonial } from "../index/mockProduct.json"
 import Rating from "../../components/Rating.vue";
+import formatPrice from "../../utils/formatPrice";
 
 export function getStaticPaths() {
   return products.map((productData) => ({
@@ -20,16 +21,16 @@ import Layout from "../../layouts/Layout.astro";
         <div class="grid md:grid-cols-2 gap-12 flex justify-center">
           <div class="md:w-full mb-2 md:mb-0 ali">
             <img
-              src={testimonial.img}
+              src={image}
               class="w-full rounded-lg shadow-lg"
               alt=""
             />
           </div>
           <div class="md:w-full mt-2 md:mt-0">
-            <p class="font-bold text-xl mb-2">{testimonial.product}</p>
-            <Rating rating={testimonial.rating} client:visible />
-            <p class="mt-2 font-semibold mb-4">{testimonial.user}</p>
-            <p>{testimonial.content}</p>
+            <p class="font-bold text-2xl mb-2">{name}</p>
+            <!-- <Rating rating={testimonial.rating} client:visible /> -->
+            <p class="mt-2 font-semibold mb-4">{formatPrice(price)}</p>
+            <p>{name}</p>
             <!-- <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">The best offer <br /><span class="text-blue-600">for your business</span></h1>
             <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Get started</a>
             <a class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Learn more</a> -->
